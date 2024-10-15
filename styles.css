@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7984cb98-df9f-4bf7-a1e5-3bddecc72a38/dhqvraw-a8c4641a-b306-433e-8cce-bd35d6ecd6d4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc5ODRjYjk4LWRmOWYtNGJmNy1hMWU1LTNiZGRlY2M3MmEzOFwvZGhxdnJhdy1hOGM0NjQxYS1iMzA2LTQzM2UtOGNjZS1iZDM1ZDZlY2Q2ZDQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NEin124rYQFcl13k4Tfs2eaKezMdDpPnFZmPsJ8G0Zg'); /* Add your image URL here */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-style: italic;
+    color: white;
+
+
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px dotted #8529C9;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card.flipped {
+    color: #333;
+    transform: scale(1.1);
+}
+
+.card.matched {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    color: #8529C9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #8529C9;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+button:hover {
+    background-color: #D027C0;
+}

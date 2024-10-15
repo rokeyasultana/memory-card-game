@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Card Game</h1>
+        <!-- game level -->
+        <div class="difficulty">
+            <label for="difficulty">Choose Difficulty: </label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="startGame">Start Game</button>
+        </div>
+        <div class="scoreboard">
+            <p>Moves: <span id="movesCount">0</span></p>
+            <p>Time: <span id="timer">0</span>s</p>
+        </div>
+        <div id="gameBoard" class="game-board"></div>
+      
+        <div class="modal" id="gameOverModal">
+            <div class="modal-content">
+                <h2>Game Over!</h2>
+                <p id="finalScore"></p>
+                <button id="restartGame">Restart Game</button>
+            </div>
+        </div>
+    </div>
+    <!-- audio -->
+    <audio id="flipSound" src="flip.mp3" preload="auto"></audio>
+    <audio id="matchSound" src="match.mp3" preload="auto"></audio>
+    <audio id="gameOverSound" src="gameover.mp3" preload="auto"></audio>
+    <audio id="gamestartSound" src="gamestart.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
